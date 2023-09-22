@@ -15,14 +15,18 @@ export const Footer = ({ fixedState, smallText, blur }) => {
               <p className="description">{smallText}</p>
             </div>
             <div className="col-md-12">
+             {/* <Link className={"footer-links"} href={"/"}>
+                Home
+              </Link>*/}
+
               <Link className={"footer-links"} href={"/contact"}>
-                Contact
+                contact
               </Link>
               <a
                 href={"https://github.com/samm-waturu"}
                 target="_blank"
                 rel="noopener">
-                Github
+                github
               </a>
             </div>
           </div>

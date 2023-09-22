@@ -1,5 +1,5 @@
 import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
+import { Sfooter } from "@/components/Sfooter";
 import { notFound } from "next/navigation";
 import { Post } from "@/components/post";
 
@@ -14,8 +14,7 @@ export default function SinglePost({ post }) {
 
       <Post post={post} />
 
-      <Footer smallText={"note."} blur={"non"} fixedState={"non"} />
-
+      <Sfooter />
     </>
   );
 }

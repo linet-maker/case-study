@@ -32,7 +32,7 @@ export const Hello = () => {
           and
           <a className={"about-info"} href="https://nextjs.org/">
             {" "}
-            Vite{" "}
+            Vite
           </a>
           .
           <br />
@@ -106,6 +106,7 @@ export const Hello = () => {
             className={"about-info"}>
             <b>Luminar</b>,{" "}
           </a>
+          and
           <a href="https://threejs.org/">
             {" "}
             <b> js libraries,</b>{" "}

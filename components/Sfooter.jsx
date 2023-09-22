@@ -12,17 +12,20 @@ export const Sfooter = () => {
         <div className={radFont.className}>
           <section className="footer">
             <div className="footer-inner row">
-
               <div className="col-md-12">
-                <p className="description">
-                  note.
-                </p>
+                <p className="description">note.</p>
               </div>
               <div className="col-md-12">
-                {/*<Link className={'footer-links'} href={'/'}>Home</Link>*/}
-                {/*<Link className={'footer-links'} href={'/'}>note.</Link>*/}
-                <Link className={"footer-links"} href={"/contact"}>Contact</Link>
-                <a href={"https://github.com/samm-waturu"} target="_blank" rel="noopener">Github</a>
+                <Link className={'footer-links'} href={'/'}>home</Link>
+                <Link className={"footer-links"} href={"/contact"}>
+                  contact
+                </Link>
+                <a
+                  href={"https://github.com/samm-waturu"}
+                  target="_blank"
+                  rel="noopener">
+                  github
+                </a>
               </div>
             </div>
           </section>
