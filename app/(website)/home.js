@@ -15,7 +15,7 @@ export default function Home({ posts }) {
 
         {/*Default singlePost*/}
 
-        <div style={{ overflow: "auto", paddingTop: "100px", paddingBottom: "80px" }}>
+        <div style={{ overflow: "auto", paddingTop: "100px", paddingBottom: "200px" }}>
 
           <Default />
 
@@ -37,7 +37,7 @@ export default function Home({ posts }) {
         </div>
       </section>
 
-      <Footer fixedState={`non`} blur={"non"} smallText={`note.`} />
+      <Footer fixedState={`navbar-fixed-bottom`} blur={"non"} smallText={`note.`} />
 
       {/*
 

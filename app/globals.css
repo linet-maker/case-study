@@ -151,12 +151,14 @@ a:hover {
 
 .about-info {
     font-size: 16px;
-    font-weight: bolder;
+    font-weight: normal;
+    font-style: italic;
 
 }
 
 .footer a {
     color: #000;
+
 
 }
 
@@ -300,6 +302,7 @@ a:hover {
 .footer {
     width: 45%;
     margin: 0 auto;
+    background-color: #fff;
     border-top: #E3E3E3 solid 1px;
     text-align: center;
     font-size: 16px;
@@ -307,7 +310,7 @@ a:hover {
 }
 
 .blur {
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
 }
 
 
