@@ -32,16 +32,16 @@ export function Default() {
                             </h1>
                         </a>
                           <p className={"onHover"}>
-                                A brief welcome note to my visitors
+                                Read me first
                             </p>
                     </span>
           <div>
 
-                    <span className={"dates"}>
+                {/*    <span className={"dates"}>
                         <br />
                       {autoDate}
                     </span>
-
+*/}
 
           </div>
         </div>
