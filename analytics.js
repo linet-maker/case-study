@@ -1,4 +1,4 @@
-// eslint-disable-next-line import/no-unresolved
+
 import { Analytics as VercelAnalytics } from '@vercel/analytics/react'
 
 export const Analytics = () => {
