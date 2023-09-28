@@ -36,13 +36,6 @@ export function Default() {
                             </p>
                     </span>
           <div>
-
-                {/*    <span className={"dates"}>
-                        <br />
-                      {autoDate}
-                    </span>
-*/}
-
           </div>
         </div>
 
