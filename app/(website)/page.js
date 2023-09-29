@@ -5,5 +5,5 @@ export default async function IndexPage() {
   const posts = await getAllPosts();
   return <HomePage posts={posts} />;
 }
-export const revalidate = 60;
+export const revalidate = 7;
 
