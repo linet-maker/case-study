@@ -10,8 +10,7 @@ export const Hello = () => {
           <b>
             <i>note</i>
           </b>
-          , a platform i use to share my relevant projects. I’m{" "}
-          <b>samm</b>, a creative and collaborative person who loves
+          , a platform i use to share my relevant projects. I’m a creative and collaborative person who loves
           to share code and ideas with others. I combine my technical
           expertise and artistic aspects, to create effective digital
           experiences. ⚡
