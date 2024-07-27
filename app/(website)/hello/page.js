@@ -1,5 +1,5 @@
-import { Sfooter } from "@/components/Sfooter";
-import { Hello } from "@/components/Hello";
+import { Sfooter } from '@/components/Sfooter';
+import { Hello } from '@/components/Hello';
 
 export default function About() {
   return (
@@ -9,7 +9,3 @@ export default function About() {
     </>
   );
 }
-
-
-
-

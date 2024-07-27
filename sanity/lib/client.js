@@ -1,10 +1,10 @@
 import { createClient } from 'next-sanity';
-import {pathQuery, postQuery, singleQuery} from "@/sanity/groq";
+import { pathQuery, postQuery, singleQuery } from '@/sanity/groq';
 import { apiVersion, dataset, projectId, useCdn } from '../env';
 
 if (!projectId) {
   console.error(
-      "The Sanity Project ID is not set. Check your environment variables."
+    'The Sanity Project ID is not set. Check your environment variables.'
   );
 }
 export const client = createClient({
@@ -12,7 +12,7 @@ export const client = createClient({
   dataset,
   projectId,
   useCdn,
-})
+});
 
 // GroQL queries are exported from here
 
@@ -28,7 +28,7 @@ export async function getAllPosts() {
 export async function getAllPostsSlugs() {
   if (client) {
     const slugs = (await client.fetch(pathQuery)) || [];
-    return slugs.map(slug => ({slug}));
+    return slugs.map((slug) => ({ slug }));
   }
   return [];
 }

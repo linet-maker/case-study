@@ -1,8 +1,12 @@
-"use client";
+'use client';
 
-import { Montserrat } from "next/font/google";
+import { Montserrat } from 'next/font/google';
 
-const montFont = Montserrat({ style: ["normal", "italic"], subsets: ["latin"], weight: ["400", "600", "800"] });
+const montFont = Montserrat({
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  weight: ['400', '600', '800'],
+});
 
 export const Header = () => {
   return (

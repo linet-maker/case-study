@@ -1,5 +1,5 @@
 /**
- * This is the schema type for block content used in the singlePost document type
+ * This is the schema type for block content used in the post document type
  * Importing this type into the studio configuration's `schema` property
  * lets you reuse it in other document types with:
  *  {
@@ -8,8 +8,8 @@
  *    type: 'blockContent'
  *  }
  */
-let blockContent;
-export default blockContent = {
+
+export const blockContent = {
   title: 'Block Content',
   name: 'blockContent',
   type: 'array',
@@ -55,10 +55,6 @@ export default blockContent = {
         ],
       },
     },
-    {
-      type: 'code',
-    },
-
     // You can add additional types here. Note that you can't use
     // primitive types such as 'string' and 'number' in the same array
     // as a block type.

@@ -1,11 +1,7 @@
-import { LemonIcon } from '@sanity/icons';
-
-let author;
-export default author = {
+export const author = {
   name: 'author',
   title: 'Author',
   type: 'document',
-  icon: LemonIcon,
   fields: [
     {
       name: 'name',

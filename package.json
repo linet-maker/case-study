@@ -6,24 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write ."
   },
   "dependencies": {
-    "@portabletext/react": "^3.0.4",
-    "@sanity/code-input": "^4.1.1",
-    "@sanity/icons": "^2.4.1",
+    "@sanity/code-input": "^4.1.4",
+    "@sanity/icons": "^3.3.0",
     "@sanity/image-url": "^1.0.2",
-    "@sanity/vision": "^3.14.5",
+    "@sanity/vision": "^3.49.0",
     "bootstrap": "^3.3.4",
-    "eslint": "8.46.0",
-    "eslint-config-next": "13.4.12",
-    "next": "13.4.12",
-    "next-sanity": "^5.1.7",
+    "next": "^14.2.4",
+    "next-sanity": "^9.4.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-refractor": "^2.1.7",
     "refractor": "^4.8.1",
-    "sanity": "^3.14.5",
-    "styled-components": "5.2"
+    "sanity": "^3.49.0",
+    "styled-components": "^6.1.11"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.2",
+    "eslint": "^9.6.0"
   }
 }

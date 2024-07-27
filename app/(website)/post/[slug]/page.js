@@ -1,6 +1,6 @@
-import PostPage from "./base";
+import PostPage from './base';
 
-import { getAllPostsSlugs, getPostBySlug } from "@/sanity/lib/client";
+import { getAllPostsSlugs, getPostBySlug } from '@/sanity/lib/client';
 
 export async function generateStaticParams() {
   return await getAllPostsSlugs();

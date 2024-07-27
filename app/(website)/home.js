@@ -1,22 +1,25 @@
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { Default } from "@/components/Default";
-import { Posts } from "@/components/Posts";
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
+import { Default } from '@/components/Default';
+import { Posts } from '@/components/Posts';
 
 export default function Home({ posts }) {
-
   return (
     <>
       <Header />
 
       <section className="post-list row">
-
         {/*Just a line or divider*/}
 
         {/*Default singlePost*/}
 
-        <div style={{ overflow: "auto", paddingTop: "100px", paddingBottom: "200px" }}>
-
+        <div
+          style={{
+            overflow: 'auto',
+            paddingTop: '100px',
+            paddingBottom: '200px',
+          }}
+        >
           <Default />
 
           {/* ui scroll down */}
@@ -27,25 +30,22 @@ export default function Home({ posts }) {
             </nav>
           </div>
 
+          {/*ui scroll down end*/}
+
           {/*Dynamic posts*/}
 
           {/*{ posts === [] ? console.log('no posts'): console.log(posts)}*/}
 
-          {posts && posts.map(post => (
-            <Posts key={post._id} post={post} />))
-          }
+          {posts && posts.map((post) => <Posts key={post._id} post={post} />)}
         </div>
       </section>
 
-      <Footer fixedState={`navbar-fixed-bottom`} blur={"non"} smallText={`note.`} />
-
-      {/*
-
-            ** modified footer **
-
-            <Footer fixedState={`navbar-fixed-bottom`} blur={'blur'} smallText={`note.`}/>
-
-            */}
+      <Footer
+        fixedState={`navbar-fixed-bottom`}
+        blur={'non'}
+        smallText={`note.`}
+      />
+      {/*<Footer fixedState={`navbar-fixed-bottom`} blur={'blur'} smallText={`note.`}/> */}
     </>
   );
 }

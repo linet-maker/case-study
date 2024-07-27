@@ -1,14 +1,7 @@
-import { MoonIcon } from '@sanity/icons';
-
-let post;
-export default post = {
+export const post = {
   name: 'post',
-  title: 'Case study',
+  title: 'Post',
   type: 'document',
-  icon: MoonIcon,
-  initialValue: () => ({
-    publishedAt: new Date().toISOString(),
-  }),
   fields: [
     {
       name: 'title',
@@ -25,18 +18,31 @@ export default post = {
       },
     },
     {
-      name: 'excerpt',
-      title: 'Excerpt',
-      description: 'The excerpt is the on hover description ',
-      type: 'text',
-      rows: 3,
-      validation: (Rule) => Rule.max(50),
-    },
-    {
       name: 'author',
       title: 'Author',
       type: 'reference',
       to: { type: 'author' },
+    },
+    {
+      name: 'mainImage',
+      title: 'Main image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+      fields: [
+        {
+          name: 'alt',
+          type: 'string',
+          title: 'Alternative Text',
+        },
+      ],
+    },
+    {
+      name: 'categories',
+      title: 'Categories',
+      type: 'array',
+      of: [{ type: 'reference', to: { type: 'category' } }],
     },
     {
       name: 'publishedAt',
