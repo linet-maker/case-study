@@ -2,6 +2,8 @@ html,
 body {
   height: 100%;
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased; /* Chrome, Safari */
+  -moz-osx-font-smoothing: grayscale;  /* Firefox */
 }
 
 h1 {
@@ -67,7 +69,7 @@ a:hover {
 }
 
 .post-list a {
-  color: #000;
+  color: #1c1c1c;
   padding-bottom: 3px;
 }
 
@@ -100,7 +102,7 @@ a:hover {
 }
 
 .post-content a {
-  /*border-bottom: #000 solid 1px*/
+  /*border-bottom: #1c1c1c solid 1px*/
 }
 
 .post-data img {
@@ -154,11 +156,11 @@ a:hover {
 }
 
 .footer a {
-  color: #000;
+  color: #1c1c1c;
 }
 
 .footer a:active {
-  border-bottom: #000 solid 1px;
+  border-bottom: #1c1c1c solid 1px;
 }
 
 .footer a:hover {
@@ -172,11 +174,11 @@ a:hover {
 }
 
 .navibar a {
-  color: #000;
+  color: #1c1c1c;
 }
 
 .navibar a:active {
-  border-bottom: #000 solid 1px;
+  border-bottom: #1c1c1c solid 1px;
 }
 
 .navibar a:hover {
@@ -258,7 +260,7 @@ a:hover {
 }
 
 .pagination-wrapper a {
-  color: #000;
+  color: #1c1c1c;
 }
 
 .pagination-wrapper a:hover {

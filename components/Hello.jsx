@@ -1,39 +1,41 @@
-import Image from 'next/image';
-import me from '@/public/img/samm.jpg';
 import Link from 'next/link';
+
+import { Radley } from 'next/font/google';
+const radFont = Radley({
+  subsets: ['latin'],
+  weight: ['400'],
+  style: ['normal', 'italic'],
+});
+import { Montserrat } from 'next/font/google';
+
+const montFont = Montserrat({
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  weight: ['400', '600', '800'],
+});
 
 export const Hello = () => {
   return (
-    <div className="post-list post-content over-scroll-top">
-      <div className="post-data">
-        <p>
-          Hello there! Welcome to <b>note</b>, a platform where I share my relevant projects.
-          I’m a <b>junior full-stack web developer</b> who loves to share code and ideas with others.
-          I combine my technical expertise and artistic skills to create effective digital experiences.⚡
-          <br />
-        </p>
-        <p>
-          I specialize in <b>JavaScript (JS)</b>, focusing on its server-side and <b>backend libraries</b>.
-          I currently use tools and frameworks such as <b>React</b>, <b>Next.js</b>, <b>MongoDB,</b> <b>Prisma</b>, <b>Sanity</b>, <b>ngrok</b>, <b>Docker</b>, and
-          <b> Linux</b>, enabling me to build comprehensive <b>full-stack web applications</b>.
-          <br />
-        </p>
-
-        <p>
-            Apart from coding, I spend most of my time blending layouts and typography with images and 3D elements. To
-            achieve desired results, I use tools such as <b>Photoshop CC</b> and <b>Blender</b>.
-            I also experiment with <b>JavaScript</b> libraries like <b>Three.js</b> for <b>3D modeling</b>.
-            Currently.
-          <br/>
+      <section className="post-list post-content">
+        <div className="post-data">
+          <p>
+            Welcome to <b>note</b>, where I share my projects as a <b>junior full-stack developer</b> passionate about
+            code and ideas. I combine technical skills with creativity to craft digital experiences. ⚡
           </p>
-        <p>
-          I am currently working on a personal project revolving around <b>AI</b> and <b>large models</b> in education,
-          exploring the latest trends and advancements in <b>AI-driven educational</b> tools and personalized learning experiences.
-          <br/>
-          <br/>
-          Click to view my <Link target={"_blank"} href={"/"}> <b>Projects</b></Link>
-        </p>
-      </div>
-    </div>
+          <p>
+            My expertise lies in <b>JavaScript (JS)</b>, with a focus on server-side and backend libraries. I work
+            with <b>React</b>, <b>Next.js</b>, <b>MongoDB</b>, <b>Prisma</b>, <b>Sanity</b>, <b>ngrok</b>, <b>Docker</b>,
+            and <b>Linux</b> to build full-stack applications.
+          </p>
+          <p>
+            Outside of coding, I blend layouts, typography, and 3D elements using <b>Photoshop CC</b>, <b>Blender</b>,
+            and <b>Three.js</b>.
+          </p>
+          <p>
+            Currently, I'm working on an <b>AI</b> project focused on personalized learning experiences. <br />
+            Check out my <Link target="_blank" href="/"> <b>Projects</b></Link>.
+          </p>
+        </div>
+      </section>
   );
 };

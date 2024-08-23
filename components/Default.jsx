@@ -27,7 +27,7 @@ export function Default() {
         <div className="col-xs-12 col-sm-12 col-lg-12 post-line">
           <span className="post-titles">
             <a href="/hello">
-              <h1>note ⚡</h1>
+              <h1>about ⚡</h1>
             </a>
             <p className={'onHover'}>Read me first</p>
           </span>

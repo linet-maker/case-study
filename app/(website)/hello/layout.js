@@ -7,5 +7,5 @@ export const metadata = {
 };
 
 export default function AboutLayout({ children }) {
-  return <section className={radFont.className}>{children}</section>;
+  return <div className={radFont.className}>{children}</div>;
 }
