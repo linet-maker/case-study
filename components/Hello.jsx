@@ -17,7 +17,7 @@ const montFont = Montserrat({
 export const Hello = () => {
   return (
       <section className="post-list post-content">
-        <div className="post-data">
+        <div className="post-data color-mod">
           <p>
             Welcome to <b>note</b>, where I share my projects as a <b>junior full-stack developer</b> passionate about
             code and ideas. I combine technical skills with creativity to craft digital experiences. ⚡
@@ -33,7 +33,7 @@ export const Hello = () => {
           </p>
           <p>
             Currently, I'm working on an <b>AI</b> project focused on personalized learning experiences. <br />
-            Check out my <Link target="_blank" href="/"> <b>Projects</b></Link>.
+            Check out my <Link target="_blank" href="/"> <b> <i>Projects</i></b></Link>.
           </p>
         </div>
       </section>

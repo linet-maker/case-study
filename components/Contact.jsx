@@ -45,7 +45,7 @@ export default function Contact() {
   return (
     <>
       <section className="post-list post-content over-scroll-bottom">
-        <div className="post-data">
+        <div className="post-data color-mod">
           <br />
           <p>
             <b>Location</b>

@@ -23,7 +23,7 @@ export const Footer = ({ fixedState, smallText, blur }) => {
                 contact
               </Link>
               <a
-                href={'https://github.com/xi-chang'}
+                href={'https://github.com/samm-waturu'}
                 target="_blank"
                 rel="noopener"
               >
