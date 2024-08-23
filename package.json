@@ -10,19 +10,13 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@sanity/code-input": "^4.1.4",
-    "@sanity/icons": "^3.3.0",
-    "@sanity/image-url": "^1.0.2",
-    "@sanity/vision": "^3.49.0",
     "bootstrap": "^3.3.4",
     "next": "13.4.12",
     "next-sanity": "^9.4.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-refractor": "^2.1.7",
-    "refractor": "^4.8.1",
-    "sanity": "^3.49.0",
-    "styled-components": "^6.1.11"
+    "refractor": "^4.8.1"
   },
   "devDependencies": {
     "prettier": "^3.3.2",
